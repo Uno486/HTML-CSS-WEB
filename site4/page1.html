@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROLE</title>
+    <style>
+        *
+        {
+           
+            box-sizing: border-box;
+        }
+        body
+        {
+            margin: 0%;
+            padding: 0%;
+        }
+        .ban
+        {
+            width: 74%;
+            margin: auto;
+            background-image: linear-gradient(to right,rgb(240, 240, 240),rgb(180, 179, 179));
+            
+        }
+        .ban img
+        {
+            width: 30%;
+          
+        }
+        .menu
+        {
+            width: 74%;
+            margin: auto;
+            display: flex;
+            background-color: rgb(100, 98, 98);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius:20px ;
+        }
+        .menu div
+        {
+            padding: 16px;
+            height: 100%;
+            cursor: pointer;
+        }
+        .menu div a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        .menu div:first-child:hover
+        {
+            border-bottom-left-radius: 20px;
+        }
+        .menu div:hover
+        {
+            background-color: rgb(0, 255, 0);
+          
+        }
+        .container
+        {
+            border: 1px solid black;
+            height: 800px;
+            margin: auto;
+            width: 74%;
+            margin-top: 3%;
+            border-radius: 10px;
+            box-shadow: 1px 2px 5px 2px black;
+            position: relative;
+        }
+        .cor1
+        {
+            width:60%;
+            height: auto;
+        }
+        .cor1 p
+        {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(68, 68, 68);
+        }
+        .cor3
+        {
+     
+            height: auto;
+            margin: auto;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .cor3 img
+        {
+            height: 50%;
+            width: 20%;
+        }
+        .cor2
+        {
+            height:auto;
+            width: auto;
+            margin-right: 10px;
+        }
+        table
+        {
+            border: 1px solid grey ;
+            width: 390px;
+            border-top-left-radius:20px ;
+            border-top-right-radius:20px ;
+            margin-top: 5%;
+        }
+        table img
+        {
+        height: 80px;
+        width: 150px;
+        }
+        table th
+        {
+            border-bottom: 1px solid black;
+            text-align: left;
+            padding-left: 10px;
+            background-image: linear-gradient(to bottom,white,grey);
+            border-top-left-radius:10px ;
+            border-top-right-radius:10px ;
+        }
+        table td h4
+        {
+            float: right;
+        }
+     .footer
+     {
+         border: 1px solid black;
+         height: 50px;
+         width: 100%;
+         border-bottom-left-radius:9px ;
+        border-bottom-right-radius:9px ;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+     }
+     .corps
+     {
+         display: flex;
+     }
+     @media only screen and (min-width: 1366px)
+     {
+      .cor2
+      {
+        position: absolute;
+        right: 0%;
+      }
+     }
+     @media only screen and (min-width: 1370px) 
+     {
+      .cor1
+      {
+        text-align: center;
+        margin-left: 2%;
+        width: 64%;
+        padding-right: 60px;
+      }
+     }
+     @media only screen and (max-width: 1320px) 
+     {
+      .corps
+      {
+          flex-wrap: wrap;
+      }
+      .container
+      {
+          height: 1100px;
+      }
+      .cor1
+      {
+          width: 100%;
+          text-align: center;
+      }
+      .cor2
+      {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+      }
+      table
+      {
+          margin: 0%;
+      }
+     }
+     @media only screen and (max-width: 1170px) 
+     {
+      .footer
+      {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+      }
+      .container
+      {
+          height: 1180px;
+          min-width: 800px;
+      }
+     }
+     @media only screen and (max-width: 1126px) 
+     {
+         .ban
+         {
+            min-width: 800px;
+   
+         }
+     .menu
+     {
+        min-width: 800px;
+        flex-direction: column;
+        text-align: center;
+     }
+     }
+     @media only screen and (max-width: 800px) 
+     {
+      .menu
+       {
+           width: 10%;
+       }
+     }
+     @media print
+     {
+        .corps
+      {
+          flex-wrap: wrap;
+      }
+     
+     .footer
+      {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+      }
+      .cor2
+      {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+      }
+      table
+      {
+          margin: 0%;
+      }
+      .cor1
+      {
+          width: 100%;
+          text-align: center;
+      }
+      .container
+      {
+          height: 1170px;
+          min-width: 800px;
+      }
+   
+     
+     }
+     body
+     {
+      background-image: linear-gradient(45deg ,red 50%,grey 50%);
+     }
+    
+   
+    </style>
+</head>
+<body>
+    <div class="ban">
+        <img src="9.png" alt="">
+    </div>
+    <div class="menu">
+       <div><a href="#">Acceuil</a></div>
+       <div><a href="#">Qui sommes nous?</a></div>
+       <div><a href="#">Contactez nous?</a></div>
+    </div>
+    <div class="container">
+        <div class="corps">
+     <div class="cor1">
+        <div class="cor3">
+            <img src="9.png" alt="icone">
+                         <h2 style="color: cornflowerblue;">Portes Ouvertes sur l'Emploi</h2>
+                         <h4>«De L'université à l'Emploi»</h4>
+                         <h6 style="color: cornflowerblue;">Les 2,3 et 4 mai 2016</h6>
+        </div>
+        <p>Lorem ipsum dolor sit amet,consectetur adiposcing elit. Donec vitae est nisi. Cras <br>
+            sollicitudin aliquet lacinia. Aenean quis quam massa. pellentesque non libero <br>
+            scelerisque odio sigittis iaculis. Proin turpis lectus, congue non ipsum aliquam, <br>
+            varius tempor leo. Duis vulputate fermentum leo, eget pellentesque arcu finibus <br>
+            eget. Donec venenatis lacus elit, sed ullamcorper turpis facilisis a. Ut at nunc vel <br>
+            neque suscipit pellentesque eget in tortor: Cras at justo srd sem laoreet iaculis eget <br>
+            non ex preasent erat neque, pretium vitae mauris non, tincidunt porta odio. <br>
+            suspendisse et quam diam. <br> <br>
+            Lorem ipsum dolor sit amet,consectetur adiposcing elit. Donec vitae est nisi. Cras <br>
+            sollicitudin aliquet lacinia. Aenean quis quam massa. pellentesque non libero <br>
+            scelerisque odio sigittis iaculis. Proin turpis lectus, congue non ipsum aliquam, <br>
+            varius tempor leo. Duis vulputate fermentum leo, eget pellentesque arcu finibus <br>
+            eget. Donec venenatis lacus elit, sed ullamcorper turpis facilisis a. Ut at nunc vel <br>
+            neque suscipit pellentesque eget in tortor: Cras at justo srd sem laoreet iaculis eget <br>
+            non ex preasent erat neque, pretium vitae mauris non, tincidunt porta odio. <br>
+            suspendisse et quam diam. <br>
+        </p>
+     </div>
+     <div class="cor2">
+         <table>
+             <th><h2>Dernieres actualites</h2></th>
+             <tr>
+                <td><h4>03 Mars 2016 <br>pourquoi faut-il etre prudent au <br>sujet de la ....</h4><img class="ol" src="4.jpg" alt=""></td>
+                
+             </tr>
+             <tr>
+                <td>  <h4>03 Avril 2016 <br>pourquoi faut-il etre prudent au <br>sujet de la ....</h4><img class="ol" src="4.jpg" alt=""></td>
+              
+             </tr>
+             <tr>
+                <td> <h4>03 Mars 2014 <br>pourquoi faut-il etre prudent au <br>sujet de la ....</h4><img class="ol" src="5.jpg" alt=""></td>
+               
+             </tr>
+             
+         </table>
+     </div>
+    </div>
+         <div class="footer">
+            <p>©Universitéde boumerdes 2016 Tous droits reserves reproduction strictement interdite</p>
+            <p>Qui sommes nous?</p>
+            <p>Mentions legales(CGU)</p>
+         </div>
+    </div>
+
+</body>
+</html>
