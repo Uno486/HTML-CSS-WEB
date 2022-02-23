@@ -1,0 +1,272 @@
+ <html>
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    body
+    {
+     margin: 0%;
+     padding: 0%;
+    }
+    .header
+    {
+        height: 200px;
+        background-color: rgb(6, 150, 6);
+        text-align: center;
+        padding-top: 4%;
+        box-sizing: border-box;
+        min-width: 379px;
+    }
+  .header h1
+    {
+      color: white;
+     
+    }
+    .header p
+    {
+        line-height: 50px;
+        color: white;
+    }
+    .menu
+    {
+      background-color: rgb(54, 53, 53);
+      display: flex;
+      align-items: center;
+      height: 50px;
+      min-width: 379px;
+    }
+    .menu>div>a
+    {
+       color: white;
+       text-decoration: none;
+       padding: 16px;
+       z-index: 1;
+    }
+    .menu>div
+    {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu>div:nth-child(1):before
+    {
+      content: "";
+      background: linear-gradient(315deg,#ffbc00,#ff0058);
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      height: 100%;
+      width: 0%;
+      transition: 0.5s ease-in-out;
+    }
+    .menu>div:nth-child(2)::before
+    {
+      content: "";
+      background: linear-gradient(315deg,#ffbc00,#ff0058);
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      height: 100%;
+      width: 0%;
+      transition: 0.5s ease-in-out;
+    }
+    .menu>div:nth-child(3):before
+    {
+      content: "";
+      background: linear-gradient(315deg,#ffbc00,#ff0058);
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      height: 100%;
+      width: 0%;
+      transition: 0.5s ease-in-out;
+    }
+    .menu>div:nth-child(4)::before
+    {
+      content: "";
+      background: linear-gradient(315deg,#ffbc00,#ff0058);
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      height: 100%;
+     transition: 0.5s ease-in-out;
+      width: 0%;
+    }
+    .menu>div:nth-child(1)::after
+    {
+      content: "";
+      background: linear-gradient(315deg,#ffbc00,#ff0058);
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      height: 100%;
+     transition: 0.5s ease-in-out;
+      width: 0%;
+    }
+    .menu>div:nth-child(2)::after
+    {
+      content: "";
+      background: linear-gradient(315deg,#ffbc00,#ff0058);
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      height: 100%;
+     transition: 0.5s ease-in-out;
+      width: 0%;
+    }
+    .menu>div:nth-child(3)::after
+    {
+      content: "";
+      background: linear-gradient(315deg,#ffbc00,#ff0058);
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      height: 100%;
+     transition: 0.5s ease-in-out;
+      width: 0%;
+    }
+    .menu>div:nth-child(4)::after
+    {
+      content: "";
+      background: linear-gradient(315deg,#ffbc00,#ff0058);
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      height: 100%;
+     transition: 0.5s ease-in-out;
+      width: 0%;
+    }
+    .menu>div:nth-child(1):hover::before
+    {
+        width: 100%;
+    }
+    .menu>div:nth-child(2):hover::before
+    {
+        width: 100%;
+    }
+    .menu>div:nth-child(3):hover::before
+    {
+        width: 100%;
+    }
+    .menu>div:nth-child(4):hover::before
+    {
+        width: 100%;
+    }
+    .menu>div:nth-child(1):hover::after
+    {
+        width: 100%;
+    }
+    .menu>div:nth-child(2):hover::after
+    {
+        width: 100%;
+    }
+    .menu>div:nth-child(3):hover::after
+    {
+        width: 100%;
+    }
+    .menu>div:nth-child(4):hover::after
+    {
+        width: 100%;
+    }
+    .menu>div:first-child
+    {
+     margin-left: 10px;
+    }
+    @media only screen and (max-width: 475px)
+    {
+        .menu
+        {
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+        }
+    }
+    .container
+    {
+        display: flex;
+    }
+    .banner
+    {
+        width: 37%;
+        background-color: rgb(230, 228, 228);
+        padding-top: 25px;
+        padding-left: 25px;
+        height: auto;
+        margin-right: 20px;
+    }
+    h2
+    {
+        margin-bottom: 15px;
+    }
+    .d
+    {
+        margin-bottom: 7px;
+        width: 55%;
+    }
+    .image
+    {
+        width: 95%;
+    }
+    .nature
+    {
+        width: 98%;
+        
+    }
+    .body
+    {
+        width: 100%;
+    }
+    .footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(170, 168, 168);
+        min-width: 380px;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mon site web LPDWI</h1>
+        <p>with a <b>flixible</b> layout</p>
+    </div>
+    <div class="menu">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Emploi du temps</a></div>
+        <div><a href="#">Réalisation</a></div>
+        <div><a href="#">Qui somme nous?</a></div>
+    </div>
+<div class="container">
+    <div class="banner">
+        <h2>About Me</h2>
+        <p>photo of me</p>
+        <img class="d" src="1.png">
+        <p style="margin-bottom: 15px;">première anée Licence Devloppement web & <br> Infographie</p>
+        <h2>portfolio</h2>
+        <img class="image" src="2.png">
+    </div>
+    <div class="body">
+        <h2>TITLE HEADING</h2>
+        <p>Title description,Feb1,2021</p>
+        <img class="nature" src="3.png">
+        <p>some text.. <br>sunt in culpa qui offcia controla danigo fobos lunes qui anokita firmo donches anyo misambo domingo farah dinamo
+            equartar presqo findo farmo ut <br>
+            chipar deninio disongo astar fi domor diango hinto di mango fuilgo arondo dilman afinoman soolos.
+        </p>
+        <h2>TITLE HEADING</h2>
+        <p>Title description,Sept2,2017</p>
+        <img class="nature" src="3.png">
+        <p>some text.. <br>sunt in culpa qui offcia controla danigo fobos lunes qui anokita firmo donches anyo misambo domingo farah dinamo
+            equartar presqo findo farmo ut <br>
+            chipar deninio disongo astar fi domor diango hinto di mango fuilgo arondo dilman afinoman soolos.
+        </p>
+    </div>
+</div>
+<div class="footer">
+    <h1>FOOTER</h1>
+</div>
+</body>
+</html>
